@@ -5,7 +5,7 @@
   "runtime~main.js.map": "/gitrending/static/js/runtime~main.4fedef85.js.map",
   "static/js/2.d4a0c6df.chunk.js": "/gitrending/static/js/2.d4a0c6df.chunk.js",
   "static/js/2.d4a0c6df.chunk.js.map": "/gitrending/static/js/2.d4a0c6df.chunk.js.map",
-  "index.html": "/gitrending/build/index.html",
+  "index.html": "/gitrending/index.html",
   "precache-manifest.75139ff79ab6a418fa2099a4ff4a99b8.js": "/gitrending/precache-manifest.75139ff79ab6a418fa2099a4ff4a99b8.js",
   "service-worker.js": "/gitrending/service-worker.js"
 }
