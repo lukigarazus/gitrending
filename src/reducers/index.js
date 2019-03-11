@@ -1,6 +1,6 @@
 import { setCookie } from "../utils";
 
-const gitrending = (state, action) => {
+const gitrending = (state: Store, action: Action) => {
   switch (action.type) {
     case "CHANGE_SINCE_PARAM":
       setCookie("since", action.newSince);

@@ -6,7 +6,9 @@ import {
 } from "../actions/types";
 import { reposReceived } from "../actions";
 
-const githubService = store => next => action => {
+const githubService = (store: { +getState: Function }) => (
+  next: Function
+) => (action: { type: string }) => {
   const resetRepos = () => {
     const state = store.getState();
     fetchGithubTrendingAPIs(
