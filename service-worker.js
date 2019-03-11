@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/gitrending/precache-manifest.75139ff79ab6a418fa2099a4ff4a99b8.js"
+  "/gitrending/precache-manifest.d02e0cc60617e6e51cbbb05259f8acbe.js"
 );
 
 workbox.clientsClaim();
