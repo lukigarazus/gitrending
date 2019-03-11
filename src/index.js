@@ -8,6 +8,7 @@ import App from "./App";
 import rootReducer from "./reducers";
 import { getCookie } from "./utils";
 import githubService from "./services/githubService";
+import "./style.css";
 
 const cookies = ["language", "since", "starSort"].reduce(
   (acc: Object, name: string) => ({ ...acc, [name]: getCookie(name) }),

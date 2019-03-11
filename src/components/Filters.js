@@ -11,15 +11,21 @@ const radioInputs = ["daily", "weekly", "monthly"];
 const sortTypes = ["ascending", "descending"];
 
 class Filters extends React.Component<FiltersProps, void> {
-  onSinceChange(ev) {
-    this.props.dispatch(changeSinceParam(ev.target.value));
+  constructor(props) {
+    super(props);
+    this.onSinceChange = ev => {
+      this.props.dispatch(changeSinceParam(ev.target.value));
+    };
+    this.onLanguageChange = ev => {
+      this.props.dispatch(changeLanguageParam(ev.target.value));
+    };
+    this.onStarCountChange = ev => {
+      this.props.dispatch(changeStarSort(ev.target.value));
+    };
   }
-  onLanguageChange(ev) {
-    this.props.dispatch(changeLanguageParam(ev.target.value));
-  }
-  onStarCountChange(ev) {
-    this.props.dispatch(changeStarSort(ev.target.value));
-  }
+  onSinceChange: Function;
+  onLanguageChange: Function;
+  onStarCountChange: Function;
   render() {
     const { language, since, starSort } = this.props;
     return (
